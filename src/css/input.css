@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+/* Variables */
+@theme {
+	/* Container */
+	--container-width: 1272px;
+	--container-side-padding: 16px;
+
+	/* Fonts */
+	--font-inter: "Inter", sans-serif;
+
+	/* Colors */
+	--color-primary-25: #e9d7fe;
+	--color-primary-50: #f5fbff;
+	--color-primary-100: #f4ebff;
+	--color-primary-200: #d5d9eb;
+	--color-primary-300: #7cd4fd;
+	--color-primary-400: #3183ef;
+	--color-primary-700: #026aa2;
+	--color-primary-750: #065986;
+	--color-primary-800: #252b37;
+	--color-primary-900: #181d27;
+
+	--color-grey-25: #fcfcfc;
+	--color-grey-50: #f8f9fc;
+	--color-grey-100: #f9f9f9;
+	--color-grey-150: #e9eaeb;
+	--color-grey-200: #d5d7da;
+	--color-grey-300: #fafafa;
+	--color-grey-400: #cecfd2;
+	--color-grey-500: #717680;
+	--color-grey-600: #535862;
+	--color-grey-700: #414651;
+
+	--color-error-50: #fef3f2;
+	--color-error-300: #fda29b;
+	--color-error-600: #d92d20;
+	--color-error-700: #b42318;
+	--color-error-800: #912018;
+
+	--color-warning-50: #fffaeb;
+	--color-warning-300: #fec84b;
+	--color-warning-700: #b54708;
+
+	--color-success-50: #ecfdf3;
+	--color-success-100: #dcfae6;
+	--color-success-300: #75e0a7;
+	--color-success-600: #079455;
+	--color-success-700: #067647;
+	--color-success-800: #085d3a;
+
+	--color-yellow-100: #fef7c3;
+	--color-yellow-300: #fde272;
+	--color-yellow-800: #854a0e;
+
+	/* Shadows */
+	--shadow-image:
+		0 10.5px 14px -3.5px rgba(10, 13, 18, 0.08),
+		0 3.5px 5.25px -1.75px rgba(10, 13, 18, 0.03),
+		0 1.75px 1.75px -0.875px rgba(10, 13, 18, 0.04);
+	--shadow-button:
+		0 0 0 1px, rgba(10, 13, 18, 0.18) inset,
+		0 -2px 0 0 rgba(10, 13, 18, 0.05) inset, 0 1px 2px 0 rgba(10, 13, 18, 0.05);
+	--shadow-button-primary:
+		0 0 0 1px rgba(10, 13, 18, 0.18) inset,
+		0 -2px 0 0 rgba(10, 13, 18, 0.05) inset, 0 1px 2px 0 rgba(10, 13, 18, 0.05);
+	--shadow-lg:
+		0 12px 16px -4px rgba(10, 13, 18, 0.08),
+		0 4px 6px -2px rgba(10, 13, 18, 0.03), 0 2px 2px -1px rgba(10, 13, 18, 0.04);
+}
+
+/* Container max-width & paddings */
+@utility container {
+	@apply mx-auto max-w-(--container-width) px-(--container-side-padding);
+}
+
+/* Base Elements  */
+@layer base {
+	body {
+		@apply font-inter;
+	}
+	button {
+		@apply cursor-pointer;
+	}
+	section {
+		@apply py-10 md:py-20;
+	}
+	h1 {
+		@apply text-primary-900 text-5xl leading-[1.2] font-semibold tracking-[-1.2px] md:text-[60px];
+	}
+	h2 {
+		@apply text-primary-900 text-3xl font-semibold tracking-[-0.72px] md:text-4xl;
+	}
+	p {
+		@apply text-grey-600;
+	}
+}
+
+/* Custom Components */
+@layer components {
+	/* Button */
+	.btn {
+		@apply inline-flex items-center justify-center gap-3 rounded-lg border border-transparent px-[18px] py-3 text-center transition-colors disabled:cursor-not-allowed disabled:opacity-85;
+	}
+	.btn-secondary {
+		@apply shadow-button border-grey-200 bg-white font-semibold not-disabled:hover:bg-gray-50 not-disabled:active:bg-gray-100;
+	}
+	.btn-primary {
+		@apply bg-primary-400 shadow-button-primary rounded-lg border border-[rgba(255,255,255,0.12)] font-semibold text-white transition-colors hover:bg-blue-500;
+	}
+
+	/* Menu */
+	.menu-link {
+		@apply text-grey-700 flex w-full items-center justify-between gap-x-2 px-2 py-3.5 font-semibold hover:text-gray-800 [&_img]:size-4;
+	}
+	.submenu {
+		@apply invisible absolute top-full left-0 min-w-max overflow-hidden rounded-lg border border-gray-100 bg-white opacity-0 transition-all group-hover/submenu:visible group-hover/submenu:grid group-hover/submenu:opacity-100;
+	}
+	.submenu-link {
+		@apply text-grey-600 hover:text-grey-700 hover:bg-grey-100 flex w-full flex-col justify-between px-3 py-2;
+	}
+
+	.mobile-menu-link {
+		@apply text-grey-700 flex w-full items-center justify-between gap-x-2 py-2 font-semibold [&_img]:size-4;
+	}
+	.mobile-submenu-link {
+		@apply text-grey-600 flex w-full flex-col justify-between p-2 text-sm;
+	}
+}

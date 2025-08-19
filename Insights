@@ -1,0 +1,36 @@
+INSIGHTS - AdOptics Managed Services Landing Page
+
+APPLICATION STRUCTURE:
+- Static HTML landing page for AdOptics Managed Services
+- Uses Tailwind CSS for styling with custom theme configuration
+- Responsive design with mobile-first approach
+- JavaScript for interactive components (mobile menu, accordions)
+
+KEY FEATURES:
+- Fully responsive navigation with mobile hamburger menu
+- Hero section promoting Google Ads management services
+- Service sections targeting SaaS, Ecommerce, and Lead-Gen brands ($5K+/mo spend)
+- Testimonials/reviews section
+- 4-step service workflow explanation
+- Flat-rate pricing at $990/month
+- FAQ accordion functionality
+- Complete footer with social links
+
+TECHNICAL DETAILS:
+- Uses Inter font from Google Fonts
+- Custom Tailwind theme with AdOptics brand colors
+- Mobile breakpoint set at 992px
+- Accessible components with ARIA attributes
+- Event delegation for better performance
+- CSS Grid and Flexbox for layouts
+
+BRAND POSITIONING:
+- Targets businesses spending $5K+/month on ads
+- Focuses on SKAG campaigns and dynamic landing pages
+- Promises hands-free management and ROAS improvement
+- Flat-rate pricing model (no ad spend markup)
+- Emphasis on results within 2-4 weeks
+
+DEPLOYMENT TARGET:
+- Intended to be deployed at https://managed.adoptics.com
+- Connected to GitHub repo: https://github.com/sprfrkr/adoptics_managed.git

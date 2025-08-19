@@ -1,0 +1,1069 @@
+<!doctype html>
+<html lang="en" class="h-full">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Adoptics Auditer</title>
+		<link rel="stylesheet" href="./css/output.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body class="relative h-full">
+		<!-- Header & Hero -->
+		<div class="bg-grey-100 relative z-0 h-auto overflow-hidden">
+			<!-- BG Pattern -->
+			<img
+				class="absolute inset-0 -z-10 h-full w-full max-w-full object-cover"
+				src="./images/global/background-pattern.png"
+				alt="bg"
+			/>
+			<!-- Header  -->
+			<header class="sticky top-0 left-0 z-10 py-4 lg:py-5">
+				<div class="container">
+					<div class="flex items-center gap-5">
+						<a href="#">
+							<img
+								class="w-[165px]"
+								src="./images/global/logo.svg"
+								alt="logo"
+							/>
+						</a>
+						<!-- Desktop menu -->
+						<nav id="menu" role="menu" class="menu z-10 hidden gap-5 lg:flex">
+							<ul class="flex items-center gap-2">
+								<!-- Menu Item With Submenu -->
+								<li class="menu-item group/submenu submenu-trigger relative">
+									<button class="menu-link">
+										<!-- Menu Item Label -->
+										<span>Products</span>
+										<!-- Menu Item Icon -->
+										<img
+											class="transition-transform group-hover/submenu:rotate-180"
+											src="./images/icons/chevron-down.svg"
+											alt="icon"
+										/>
+									</button>
+									<!-- Submenu | Dropdown -->
+									<ul class="submenu">
+										<li>
+											<a class="submenu-link" href="#">Inner Link 1</a>
+										</li>
+										<li>
+											<a class="submenu-link" href="#">Inner Link 2</a>
+										</li>
+										<li>
+											<a class="submenu-link" href="#">Inner Link 3</a>
+										</li>
+									</ul>
+								</li>
+								<!-- Menu Item With Submenu -->
+								<li class="menu-item group/submenu submenu-trigger relative">
+									<button class="menu-link">
+										<!-- Menu Item Label -->
+										<span>Services</span>
+										<!-- Menu Item Icon -->
+										<img
+											class="transition-transform group-hover/submenu:rotate-180"
+											src="./images/icons/chevron-down.svg"
+											alt="icon"
+										/>
+									</button>
+									<!-- Submenu | Dropdown -->
+									<ul class="submenu">
+										<li>
+											<a class="submenu-link" href="#">Inner Link 1</a>
+										</li>
+										<li>
+											<a class="submenu-link" href="#">Inner Link 2</a>
+										</li>
+										<li>
+											<a class="submenu-link" href="#">Inner Link 3</a>
+										</li>
+									</ul>
+								</li>
+								<!-- Menu Item -->
+								<li class="menu-item">
+									<a href="#" class="menu-link">Pricing</a>
+								</li>
+								<!-- Menu Item With Submenu -->
+								<li class="menu-item group/submenu submenu-trigger relative">
+									<button class="menu-link">
+										<!-- Menu Item Label -->
+										<span>Resources</span>
+										<!-- Menu Item Icon -->
+										<img
+											class="transition-transform group-hover/submenu:rotate-180"
+											src="./images/icons/chevron-down.svg"
+											alt="icon"
+										/>
+									</button>
+									<!-- Submenu | Dropdown -->
+									<ul class="submenu">
+										<li>
+											<a class="submenu-link" href="#">Inner Link 1</a>
+										</li>
+										<li>
+											<a class="submenu-link" href="#">Inner Link 2</a>
+										</li>
+										<li>
+											<a class="submenu-link" href="#">Inner Link 3</a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu-item">
+									<a href="#" class="menu-link">About</a>
+								</li>
+							</ul>
+						</nav>
+
+						<!-- Buttons -->
+						<div class="ml-auto hidden gap-3 lg:flex">
+							<a href="#" class="btn btn-secondary">Log in</a>
+							<a href="#" class="btn btn-primary">Sign up</a>
+						</div>
+
+						<!--  Mobile Menu -->
+						<div>
+							<!-- Mobile Menu container -->
+							<div
+								id="mobile-menu"
+								class="fixed top-0 left-0 z-20 h-full w-[80%] -translate-x-full transform bg-white shadow-xl transition-transform duration-300 ease-in-out [.is-open]:visible [.is-open]:opacity-100"
+							>
+								<div class="flex h-full w-full flex-col p-4">
+									<a href="#">
+										<img src="./images/global/logo.svg" alt="logo" />
+									</a>
+
+									<nav class="mt-10 w-full flex-1 overflow-auto" role="menu">
+										<ul class="divide-grey-150 w-full divide-y">
+											<!-- Menu Item With Submenu -->
+											<li class="with-submenu group relative">
+												<div class="flex w-full flex-col">
+													<!-- Submenu Trigger -->
+													<button class="submenu-trigger mobile-menu-link">
+														<span class="pointer-events-none">Products</span>
+														<img
+															class="pointer-events-none transition-transform group-[.active]:rotate-180"
+															src="./images/icons/chevron-down.svg"
+															alt="arrow"
+														/>
+													</button>
+
+													<!-- Submenu Content -->
+													<div
+														class="submenu-mobile grid grid-rows-[0fr] transition-all duration-500 group-[.active]:grid-rows-[1fr]"
+													>
+														<div class="overflow-hidden">
+															<ul class="pb-2">
+																<li>
+																	<a href="#" class="mobile-submenu-link">
+																		Settings
+																	</a>
+																</li>
+																<li>
+																	<a href="#" class="mobile-submenu-link">
+																		Profile
+																	</a>
+																</li>
+																<li>
+																	<a href="#" class="mobile-submenu-link">
+																		Contacts
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</li>
+											<!-- Menu Item With Submenu -->
+											<li class="with-submenu group relative">
+												<div class="flex w-full flex-col">
+													<!-- Submenu Trigger -->
+													<button class="submenu-trigger mobile-menu-link">
+														<span class="pointer-events-none">Services</span>
+														<img
+															class="pointer-events-none transition-transform group-[.active]:rotate-180"
+															src="./images/icons/chevron-down.svg"
+															alt="arrow"
+														/>
+													</button>
+
+													<!-- Submenu Content -->
+													<div
+														class="submenu-mobile grid grid-rows-[0fr] transition-all duration-500 group-[.active]:grid-rows-[1fr]"
+													>
+														<div class="overflow-hidden">
+															<ul class="pb-2">
+																<li>
+																	<a href="#" class="mobile-submenu-link">
+																		Settings
+																	</a>
+																</li>
+																<li>
+																	<a href="#" class="mobile-submenu-link">
+																		Profile
+																	</a>
+																</li>
+																<li>
+																	<a href="#" class="mobile-submenu-link">
+																		Contacts
+																	</a>
+																</li>
+																<li>
+																	<a href="#" class="mobile-submenu-link">
+																		Settings
+																	</a>
+																</li>
+																<li>
+																	<a href="#" class="mobile-submenu-link">
+																		Profile
+																	</a>
+																</li>
+																<li>
+																	<a href="#" class="mobile-submenu-link">
+																		Contacts
+																	</a>
+																</li>
+																<li>
+																	<a href="#" class="mobile-submenu-link">
+																		Settings
+																	</a>
+																</li>
+																<li>
+																	<a href="#" class="mobile-submenu-link">
+																		Profile
+																	</a>
+																</li>
+																<li>
+																	<a href="#" class="mobile-submenu-link">
+																		Contacts
+																	</a>
+																</li>
+																<li>
+																	<a href="#" class="mobile-submenu-link">
+																		Settings
+																	</a>
+																</li>
+																<li>
+																	<a href="#" class="mobile-submenu-link">
+																		Profile
+																	</a>
+																</li>
+																<li>
+																	<a href="#" class="mobile-submenu-link">
+																		Contacts
+																	</a>
+																</li>
+																<li>
+																	<a href="#" class="mobile-submenu-link">
+																		Settings
+																	</a>
+																</li>
+																<li>
+																	<a href="#" class="mobile-submenu-link">
+																		Profile
+																	</a>
+																</li>
+																<li>
+																	<a href="#" class="mobile-submenu-link">
+																		Contacts
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<a href="#" class="mobile-menu-link">Pricing</a>
+											</li>
+
+											<!-- Menu Item With Submenu -->
+											<li class="with-submenu group relative">
+												<div class="flex w-full flex-col">
+													<!-- Submenu Trigger -->
+													<button class="submenu-trigger mobile-menu-link">
+														<span class="pointer-events-none">Resources</span>
+														<img
+															class="pointer-events-none transition-transform group-[.active]:rotate-180"
+															src="./images/icons/chevron-down.svg"
+															alt="arrow"
+														/>
+													</button>
+
+													<!-- Submenu Content -->
+													<div
+														class="submenu-mobile grid grid-rows-[0fr] transition-all duration-500 group-[.active]:grid-rows-[1fr]"
+													>
+														<div class="overflow-hidden">
+															<ul class="pb-2">
+																<li>
+																	<a href="#" class="mobile-submenu-link">
+																		Settings
+																	</a>
+																</li>
+																<li>
+																	<a href="#" class="mobile-submenu-link">
+																		Profile
+																	</a>
+																</li>
+																<li>
+																	<a href="#" class="mobile-submenu-link">
+																		Contacts
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</li>
+
+											<li>
+												<a href="#" class="mobile-menu-link">About</a>
+											</li>
+										</ul>
+									</nav>
+
+									<div class="mt-auto flex flex-col gap-3 pt-4">
+										<a href="#" class="btn btn-secondary">Log in</a>
+										<a href="#" class="btn btn-primary">Sign up</a>
+									</div>
+								</div>
+							</div>
+
+							<!-- Mobile Menu Overlay -->
+							<div
+								id="mobile-menu-overlay"
+								class="pointer-events-none fixed inset-0 z-0 bg-black/80 opacity-0 transition-opacity duration-300 ease-in-out"
+							></div>
+						</div>
+
+						<!-- Burger Button -->
+						<button
+							id="burger"
+							class="group relative z-20 ml-auto block h-4 w-5 outline-none lg:hidden"
+							aria-label="Open mobile menu"
+							aria-expanded="false"
+							aria-controls="mobile-menu"
+						>
+							<span
+								class="bg-grey-700 absolute top-0 left-0 flex h-[2px] w-5 rounded-full transition-transform group-[.active]:translate-y-1.5 group-[.active]:rotate-45 group-[.active]:bg-white"
+							></span>
+							<span
+								class="bg-grey-700 absolute top-1/2 left-0 flex h-[2px] w-5 translate-x-0 -translate-y-1/2 rounded-full transition-transform group-[.active]:opacity-0"
+							></span>
+							<span
+								class="bg-grey-700 absolute bottom-0 left-0 flex h-[2px] w-5 rounded-full transition-transform group-[.active]:-translate-y-[8px] group-[.active]:-rotate-45 group-[.active]:bg-white"
+							></span>
+						</button>
+					</div>
+				</div>
+			</header>
+
+			<!-- Hero -->
+			<section class="md:pb-0">
+				<div class="container">
+					<div class="flex flex-col items-center">
+						<h1 class="text-center">
+							Hands-Free Google Ads Management That Scales Your ROAS
+						</h1>
+						<p
+							class="mt-4 max-w-[768px] text-center text-lg md:mt-6 md:text-xl"
+						>
+							We manage your Google Ads campaigns with SKAGs, dynamic landing
+							pages, and expert optimization — all done for you.
+						</p>
+						<div
+							class="mt-8 flex w-full flex-col items-center justify-center gap-3 sm:flex-row md:mt-12"
+						>
+							<a
+								href="#"
+								class="btn btn-secondary w-full max-w-full sm:max-w-fit"
+							>
+								View Sample Results
+							</a>
+							<a
+								href="#"
+								class="btn btn-primary w-full max-w-full sm:max-w-fit"
+							>
+								Book Free Strategy Call
+							</a>
+						</div>
+					</div>
+					<div class="mt-12 flex justify-center md:mt-18">
+						<picture>
+							<source
+								srcset="./images/home/hero-image.png"
+								media="(min-width:768px)"
+							/>
+							<img src="./images/home/hero-mobile.png" alt="gero image" />
+						</picture>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<!-- Main Content -->
+		<main class="flex-auto">
+			<!-- Built for SaaS, Ecommerce, And Lead-Gen Brands Spending $5K+/mo -->
+			<section class="relative md:py-[94px] lg:py-[174px]">
+				<div class="container">
+					<div class="flex flex-col gap-12 md:flex-row">
+						<div class="md:w-full md:max-w-[500px]">
+							<div class="mx-auto flex flex-col space-y-4">
+								<h2>
+									Built for SaaS, Ecommerce, And Lead-Gen Brands Spending
+									$5K+/mo
+								</h2>
+								<p class="text-lg md:text-xl">
+									Proven PPC strategies to maximize ROI, accelerate growth, and
+									scale your customer acquisition.
+								</p>
+							</div>
+
+							<ul class="mt-8 space-y-4">
+								<li class="flex items-center gap-3">
+									<img
+										src="./images/icons/check-circle-lightblue.svg"
+										alt="check icon"
+									/>
+									<p>SaaS</p>
+								</li>
+								<li class="flex items-center gap-3">
+									<img
+										src="./images/icons/check-circle-lightblue.svg"
+										alt="check icon"
+									/>
+									<p>Ecommerce</p>
+								</li>
+								<li class="flex items-center gap-3">
+									<img
+										src="./images/icons/check-circle-lightblue.svg"
+										alt="check icon"
+									/>
+									<p>B2B Lead Gen</p>
+								</li>
+							</ul>
+						</div>
+
+						<img
+							class="md:hidden"
+							src="./images/home/home-image-mobile.png"
+							alt="home image"
+						/>
+						<img
+							class="absolute right-0 bottom-0 hidden md:block md:max-w-[300px] lg:max-w-[478px] xl:max-w-[678px]"
+							src="./images/home/home-image.png"
+							alt="home image"
+						/>
+					</div>
+				</div>
+			</section>
+
+			<!-- Real Results For Real Brands -->
+			<section>
+				<div class="container">
+					<div class="mx-auto flex flex-col items-center space-y-4 text-center">
+						<h2>Real Results For Real Brands</h2>
+						<p class="text-lg md:text-xl">
+							From 1.5x to 5x ROAS — see what we’ve delivered
+						</p>
+					</div>
+
+					<div class="mt-12 grid gap-6 md:mt-16 md:grid-cols-3">
+						<div class="bg-grey-300 rounded-xl p-6">
+							<div class="flex items-center gap-1">
+								<img src="./images/icons/star.svg" alt="star icon" />
+								<img src="./images/icons/star.svg" alt="star icon" />
+								<img src="./images/icons/star.svg" alt="star icon" />
+								<img src="./images/icons/star.svg" alt="star icon" />
+								<img src="./images/icons/star.svg" alt="star icon" />
+							</div>
+							<p class="text-primary-900 mt-4 font-medium">
+								"We doubled our ROAS in 30 days!"
+							</p>
+
+							<div class="mt-8 flex items-center gap-3">
+								<div
+									class="aspect-video size-12 shrink-0 overflow-hidden rounded-full"
+								>
+									<img src="./images/home/avatar.png" alt="avatar" />
+								</div>
+
+								<div>
+									<div class="flex items-center gap-1">
+										<p class="text-primary-900 font-semibold">Ammar Foley</p>
+										<img src="./images/icons/verified.svg" alt="icon" />
+									</div>
+									<a
+										href="#"
+										class="text-grey-600 hover:text-primary-800 underline underline-offset-4 transition-colors"
+									>
+										@Ammarfoley
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="bg-grey-300 rounded-xl p-6">
+							<div class="flex items-center gap-1">
+								<img src="./images/icons/star.svg" alt="star icon" />
+								<img src="./images/icons/star.svg" alt="star icon" />
+								<img src="./images/icons/star.svg" alt="star icon" />
+								<img src="./images/icons/star.svg" alt="star icon" />
+								<img src="./images/icons/star.svg" alt="star icon" />
+							</div>
+							<p class="text-primary-900 mt-4 font-medium">
+								"We doubled our ROAS in 30 days!"
+							</p>
+
+							<div class="mt-8 flex items-center gap-3">
+								<div
+									class="aspect-video size-12 shrink-0 overflow-hidden rounded-full"
+								>
+									<img src="./images/home/avatar.png" alt="avatar" />
+								</div>
+
+								<div>
+									<div class="flex items-center gap-1">
+										<p class="text-primary-900 font-semibold">Ammar Foley</p>
+										<img src="./images/icons/verified.svg" alt="icon" />
+									</div>
+									<a
+										href="#"
+										class="text-grey-600 hover:text-primary-800 underline underline-offset-4 transition-colors"
+									>
+										@Ammarfoley
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="bg-grey-300 rounded-xl p-6">
+							<div class="flex items-center gap-1">
+								<img src="./images/icons/star.svg" alt="star icon" />
+								<img src="./images/icons/star.svg" alt="star icon" />
+								<img src="./images/icons/star.svg" alt="star icon" />
+								<img src="./images/icons/star.svg" alt="star icon" />
+								<img src="./images/icons/star.svg" alt="star icon" />
+							</div>
+							<p class="text-primary-900 mt-4 font-medium">
+								"We doubled our ROAS in 30 days!"
+							</p>
+
+							<div class="mt-8 flex items-center gap-3">
+								<div
+									class="aspect-video size-12 shrink-0 overflow-hidden rounded-full"
+								>
+									<img src="./images/home/avatar.png" alt="avatar" />
+								</div>
+
+								<div>
+									<div class="flex items-center gap-1">
+										<p class="text-primary-900 font-semibold">Ammar Foley</p>
+										<img src="./images/icons/verified.svg" alt="icon" />
+									</div>
+									<a
+										href="#"
+										class="text-grey-600 hover:text-primary-800 underline underline-offset-4 transition-colors"
+									>
+										@Ammarfoley
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Every Click. Every Page. Fully Managed. -->
+			<section class="bg-primary-400">
+				<div class="container">
+					<div class="mx-auto flex flex-col items-center space-y-4 text-center">
+						<h2 class="text-white">Every Click. Every Page. Fully Managed.</h2>
+					</div>
+
+					<div class="mt-12 grid gap-10 md:mt-16 md:grid-cols-3 md:gap-8">
+						<div class="flex flex-col items-center text-center">
+							<img src="./images/icons/file-question-02.svg" alt="icon" />
+							<h4 class="mt-3 text-lg font-semibold text-white">
+								Custom SKAG Campaign Builds
+							</h4>
+							<p class="text-primary-25 mt-1">
+								Each keyword in its own high-performing ad group.
+							</p>
+						</div>
+						<div class="flex flex-col items-center text-center">
+							<img src="./images/icons/code-browser.svg" alt="icon" />
+							<h4 class="mt-3 text-lg font-semibold text-white">
+								Dynamic Landing Pages
+							</h4>
+							<p class="text-primary-25 mt-1">
+								Personalized pages generated instantly for each keyword.
+							</p>
+						</div>
+						<div class="flex flex-col items-center text-center">
+							<img src="./images/icons/users-01.svg" alt="icon" />
+							<h4 class="mt-3 text-lg font-semibold text-white">
+								Full Account Management
+							</h4>
+							<p class="text-primary-25 mt-1">
+								We handle setup, optimization, and reporting for you.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Here Is How Our Service Works -->
+			<section>
+				<div class="container">
+					<div class="mx-auto flex flex-col items-center space-y-4 text-center">
+						<h2>Here Is How Our Service Works</h2>
+					</div>
+
+					<div class="mt-12 grid gap-12 md:mt-16 md:gap-5">
+						<!-- 1. Discovery Call -->
+						<div
+							class="grid gap-10 md:grid-cols-2 md:items-center md:py-10 lg:gap-20"
+						>
+							<div>
+								<div
+									class="bg-primary-100 flex aspect-square size-12 items-center justify-center rounded-full"
+								>
+									<img src="./images/icons/phone-call-01.svg" alt="icon" />
+								</div>
+								<h3 class="text-primary-900 mt-5 text-2xl font-semibold">
+									1. Discovery Call
+								</h3>
+								<p class="mt-4">
+									Our process begins with a dedicated discovery session where we
+									take the time to understand your business, your audience, and
+									your advertising goals in detail. We’ll review your current
+									campaigns (if you have them), discuss the markets you’re
+									targeting, and uncover the opportunities where paid search can
+									deliver the most impact. This conversation ensures we’re fully
+									aligned on your KPIs, budget, and timelines before moving
+									forward.
+								</p>
+								<a href="#" class="btn btn-secondary mt-8">
+									Book Your Discovery Call
+								</a>
+							</div>
+							<img
+								class="h-auto w-full max-w-full"
+								src="./images/home/service-1.png"
+								alt="service image"
+							/>
+						</div>
+
+						<!-- 2. Campaign Build -->
+						<div
+							class="grid gap-10 md:grid-cols-2 md:items-center md:py-10 lg:gap-20"
+						>
+							<div class="md:order-2">
+								<div
+									class="bg-primary-100 flex aspect-square size-12 items-center justify-center rounded-full"
+								>
+									<img src="./images/icons/puzzle-piece-02.svg" alt="icon" />
+								</div>
+								<h3 class="text-primary-900 mt-5 text-2xl font-semibold">
+									2. Campaign Build
+								</h3>
+								<p class="mt-4">
+									Once we have a clear strategy, we roll up our sleeves and
+									build your campaigns from the ground up. This includes
+									crafting high-performing ad copy tailored to your target
+									audience, setting up SKAGs (Single Keyword Ad Groups) for
+									precision targeting, and creating dedicated keyword-optimized
+									landing pages to maximize conversions. Every element is
+									structured to deliver measurable results while adhering to
+									best practices for account quality and ROI.
+								</p>
+							</div>
+
+							<img
+								class="h-auto w-full max-w-full md:order-1"
+								src="./images/home/service-2.png"
+								alt="service image"
+							/>
+						</div>
+
+						<!-- 3. Launch -->
+						<div
+							class="grid gap-10 md:grid-cols-2 md:items-center md:py-10 lg:gap-20"
+						>
+							<div>
+								<div
+									class="bg-primary-100 flex aspect-square size-12 items-center justify-center rounded-full"
+								>
+									<img src="./images/icons/home-line.svg" alt="icon" />
+								</div>
+								<h3 class="text-primary-900 mt-5 text-2xl font-semibold">
+									3. Launch
+								</h3>
+								<p class="mt-4">
+									With everything in place, your campaigns go live. From day
+									one, we monitor performance closely, ensuring proper tracking
+									is in place and that your ads are serving in the right
+									locations, times, and to the right audiences. Early data is
+									used to make rapid optimizations so your budget works as
+									efficiently as possible right out of the gate.
+								</p>
+							</div>
+							<img
+								class="h-auto w-full max-w-full"
+								src="./images/home/service-3.png"
+								alt="service image"
+							/>
+						</div>
+
+						<!-- 4. Growth Review -->
+						<div
+							class="grid gap-10 md:grid-cols-2 md:items-center md:py-10 lg:gap-20"
+						>
+							<div class="md:order-2">
+								<div
+									class="bg-primary-100 flex aspect-square size-12 items-center justify-center rounded-full"
+								>
+									<img src="./images/icons/scale-03.svg" alt="icon" />
+								</div>
+								<h3 class="text-primary-900 mt-5 text-2xl font-semibold">
+									4. Growth Review
+								</h3>
+								<p class="mt-4">
+									PPC success doesn’t stop at launch — it’s an ongoing process.
+									In regular growth review sessions, we analyze campaign
+									performance, highlight wins, identify areas for improvement,
+									and test new opportunities. Whether that’s scaling ad spend in
+									high-performing segments, refining targeting, or introducing
+									new creative, our focus is on consistent improvement and
+									sustainable ROI growth over time.
+								</p>
+								<a href="#" class="btn btn-secondary mt-8">
+									Get Started with a Free Call
+								</a>
+							</div>
+
+							<img
+								class="h-auto w-full max-w-full md:order-1"
+								src="./images/home/service-4.png"
+								alt="service image"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Flat-Rate Pricing. No Surprises. -->
+			<section>
+				<div class="container">
+					<div class="mx-auto flex flex-col items-center space-y-4 text-center">
+						<h2>Flat-Rate Pricing. No Surprises.</h2>
+						<p class="text-lg md:text-xl">
+							No ad spend markup. Cancel anytime.
+						</p>
+					</div>
+
+					<div
+						class="mx-auto mt-12 max-w-[384px] rounded-2xl border border-black/[0.08] px-6 py-8 shadow-lg md:mt-16 md:px-8"
+					>
+						<h2 class="text-center">$990/mth</h2>
+						<h3 class="text-primary-900 mt-4 text-center text-xl font-semibold">
+							Fully Managed Plan
+						</h3>
+						<ul class="my-8 space-y-4">
+							<li class="flex items-center gap-3">
+								<img src="./images/icons/check-circle.svg" alt="check icon" />
+								<p>Unlimited Campaigns & Keywords</p>
+							</li>
+							<li class="flex items-center gap-3">
+								<img src="./images/icons/check-circle.svg" alt="check icon" />
+								<p>Full Google Ads Management</p>
+							</li>
+							<li class="flex items-center gap-3">
+								<img src="./images/icons/check-circle.svg" alt="check icon" />
+								<p>Dynamic Landing Pages</p>
+							</li>
+							<li class="flex items-center gap-3">
+								<img src="./images/icons/check-circle.svg" alt="check icon" />
+								<p>Conversion Tracking & Reports</p>
+							</li>
+						</ul>
+
+						<a href="#" class="btn btn-primary w-full max-w-full">
+							Book Free Call
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Frequently asked questions -->
+			<section>
+				<div class="container">
+					<div class="mx-auto flex flex-col items-center space-y-4 text-center">
+						<h2>Frequently asked questions</h2>
+					</div>
+
+					<!-- [START] HTML Accordion -->
+					<div class="accordion mt-12 grid gap-4 md:mt-16">
+						<!-- Accrodion Item -->
+						<div
+							class="accordion-item active group overflow-hidden rounded-2xl"
+						>
+							<!-- Accrodion Trigger -->
+							<button
+								class="accordion-trigger bg-grey-300 flex w-full cursor-pointer items-center justify-between gap-2 overflow-hidden p-5 md:justify-start md:gap-4 md:p-6"
+							>
+								<span
+									class="text-primary-900 text-left text-base font-semibold md:order-2"
+								>
+									Do I need to do anything after signup?
+								</span>
+								<!-- Icon -->
+								<div
+									class="flex aspect-square size-6 items-center justify-center rounded-full border-2 border-[#A4A7AE] md:order-1"
+								>
+									<!-- Plus icon -->
+									<div
+										class="flex size-2.5 flex-col items-center justify-center"
+									>
+										<span
+											class="flex h-[2px] w-full translate-y-px rotate-90 rounded-full bg-[#A4A7AE] transition-transform group-[.active]:scale-0 group-[.active]:rotate-0"
+										></span>
+										<span
+											class="flex h-[2px] w-full -translate-y-px rounded-full bg-[#A4A7AE]"
+										></span>
+									</div>
+								</div>
+							</button>
+
+							<!-- Accrodion Content -->
+							<div
+								class="accordion-content bg-grey-300 grid grid-rows-[0fr] transition-all duration-500 group-[.active]:-mt-5 group-[.active]:grid-rows-[1fr] md:group-[.active]:-mt-4"
+							>
+								<div class="overflow-hidden">
+									<p class="p-5 pt-0 pr-16 text-left md:p-6 md:px-16 md:pt-0">
+										We take it from there — setup, optimize, manage.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Accrodion Item -->
+						<div
+							class="accordion-item active group overflow-hidden rounded-2xl"
+						>
+							<!-- Accrodion Trigger -->
+							<button
+								class="accordion-trigger bg-grey-300 flex w-full cursor-pointer items-center justify-between gap-2 overflow-hidden p-5 md:justify-start md:gap-4 md:p-6"
+							>
+								<span
+									class="text-primary-900 text-left text-base font-semibold md:order-2"
+								>
+									When will I see results?
+								</span>
+								<!-- Icon -->
+								<div
+									class="flex aspect-square size-6 items-center justify-center rounded-full border-2 border-[#A4A7AE] md:order-1"
+								>
+									<!-- Plus icon -->
+									<div
+										class="flex size-2.5 flex-col items-center justify-center"
+									>
+										<span
+											class="flex h-[2px] w-full translate-y-px rotate-90 rounded-full bg-[#A4A7AE] transition-transform group-[.active]:scale-0 group-[.active]:rotate-0"
+										></span>
+										<span
+											class="flex h-[2px] w-full -translate-y-px rounded-full bg-[#A4A7AE]"
+										></span>
+									</div>
+								</div>
+							</button>
+
+							<!-- Accrodion Content -->
+							<div
+								class="accordion-content bg-grey-300 grid grid-rows-[0fr] transition-all duration-500 group-[.active]:-mt-5 group-[.active]:grid-rows-[1fr] md:group-[.active]:-mt-4"
+							>
+								<div class="overflow-hidden">
+									<p class="p-5 pt-0 pr-16 text-left md:p-6 md:px-16 md:pt-0">
+										Most clients see major improvement within 2–4 weeks.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- [END] HTML Accordion -->
+				</div>
+			</section>
+
+			<!-- CTA -->
+			<section>
+				<div class="container">
+					<p class="text-center">More questions? Email us here.</p>
+
+					<div
+						class="bg-primary-400 mt-12 flex flex-col items-center rounded-2xl px-6 py-10 md:mt-16 md:p-16"
+					>
+						<h2 class="text-center text-white">
+							Let’s Turn Your Ads Into A Profit Machine
+						</h2>
+						<p
+							class="text-primary-25 mt-4 text-center text-lg md:mt-5 md:text-xl"
+						>
+							We only onboard a few clients each month. Book your strategy call
+							now.
+						</p>
+						<a href="#" class="btn btn-secondary mt-8">
+							Book My Free Strategy Call
+						</a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer>
+			<div class="container">
+				<div class="py-16">
+					<!-- Menu -->
+					<div class="flex justify-between gap-3">
+						<nav>
+							<p class="text-sm font-semibold text-gray-500">Product</p>
+							<ul class="mt-4 space-y-3">
+								<li>
+									<a
+										class="font-semibold text-gray-600 transition-colors hover:text-gray-900"
+										href="#@"
+									>
+										Features
+									</a>
+								</li>
+								<li>
+									<a
+										class="font-semibold text-gray-600 transition-colors hover:text-gray-900"
+										href="#@"
+									>
+										Pricing
+									</a>
+								</li>
+								<li>
+									<a
+										class="font-semibold text-gray-600 transition-colors hover:text-gray-900"
+										href="#@"
+									>
+										Login
+									</a>
+								</li>
+								<li>
+									<a
+										class="font-semibold text-gray-600 transition-colors hover:text-gray-900"
+										href="#@"
+									>
+										Sign up
+									</a>
+								</li>
+							</ul>
+						</nav>
+						<nav>
+							<p class="text-sm font-semibold text-gray-500">Company</p>
+							<ul class="mt-4 space-y-3">
+								<li>
+									<a
+										class="font-semibold text-gray-600 transition-colors hover:text-gray-900"
+										href="#@"
+									>
+										About us
+									</a>
+								</li>
+								<li>
+									<a
+										class="font-semibold text-gray-600 transition-colors hover:text-gray-900"
+										href="#@"
+									>
+										Blog
+									</a>
+								</li>
+								<li>
+									<a
+										class="font-semibold text-gray-600 transition-colors hover:text-gray-900"
+										href="#@"
+									>
+										Careers
+									</a>
+								</li>
+								<li>
+									<a
+										class="font-semibold text-gray-600 transition-colors hover:text-gray-900"
+										href="#@"
+									>
+										Contact us
+									</a>
+								</li>
+							</ul>
+						</nav>
+						<nav>
+							<p class="text-sm font-semibold text-gray-500">Social</p>
+							<ul class="mt-4 space-y-3">
+								<li>
+									<a
+										target="_blank"
+										class="font-semibold text-gray-600 transition-colors hover:text-gray-900"
+										href="#@"
+									>
+										Twitter
+									</a>
+								</li>
+								<li>
+									<a
+										target="_blank"
+										class="font-semibold text-gray-600 transition-colors hover:text-gray-900"
+										href="#@"
+									>
+										LinkedIn
+									</a>
+								</li>
+								<li>
+									<a
+										target="_blank"
+										class="font-semibold text-gray-600 transition-colors hover:text-gray-900"
+										href="#@"
+									>
+										Facebook
+									</a>
+								</li>
+								<li>
+									<a
+										target="_blank"
+										class="font-semibold text-gray-600 transition-colors hover:text-gray-900"
+										href="#@"
+									>
+										Instagram
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+					<!-- Copy -->
+					<div class="mt-16 flex items-center justify-between gap-5 pb-16">
+						<a href=" #" class="flex w-[88px] sm:w-[165px]">
+							<img src="./images/global/logo-footer.svg" alt="logo" />
+						</a>
+
+						<p class="text-right text-xs">
+							© 2025 AdOptics. All rights reserved.
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- JS -->
+		<script src="./js/main.js"></script>
+	</body>
+</html>
