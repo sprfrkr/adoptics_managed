@@ -83,7 +83,7 @@
 		@apply cursor-pointer;
 	}
 	section {
-		@apply py-10 md:py-20;
+		@apply py-8 md:py-16;
 	}
 	h1 {
 		@apply text-primary-900 text-5xl leading-[1.2] font-semibold tracking-[-1.2px] md:text-[60px];
