@@ -37,8 +37,31 @@
 		/>
 	</head>
 	<body class="relative h-full">
+		<!-- Promotional Sticky Bar -->
+		<div id="promo-bar" class="fixed top-0 left-0 right-0 text-white py-4 sm:py-3 px-4 shadow-lg" style="background-color: #FF5A5F; z-index: 9999;">
+			<div class="container mx-auto flex items-center justify-center text-center">
+				<div class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+					<div class="flex items-center gap-2">
+						<span class="text-sm sm:text-base font-semibold">🔥 LIMITED TIME OFFER:</span>
+						<span class="text-sm sm:text-base">Book a discovery call in the next</span>
+					</div>
+					<div class="flex items-center gap-2">
+						<div id="countdown-timer" class="px-3 py-1 rounded-md font-bold text-sm sm:text-base text-white" style="background-color: #FF5A5F;">
+							<span id="countdown-minutes">23</span>:<span id="countdown-seconds">00</span>
+						</div>
+						<span class="text-sm sm:text-base font-semibold">minutes</span><span class="text-sm sm:text-base">and get your first month FREE!</span>
+					</div>
+					<a href="https://api.leadconnectorhq.com/widget/booking/Vjt4i3z3mS0p0LHQzExz" 
+						class="text-white hover:opacity-90 px-4 py-2 rounded-md font-bold text-sm sm:text-base transition-all duration-200 whitespace-nowrap" style="background-color: #FF5A5F;">
+						Book Now →
+					</a>
+				</div>
+
+			</div>
+		</div>
+
 		<!-- Header & Hero -->
-		<div class="bg-grey-100 relative z-0 h-auto overflow-hidden">
+		<div class="bg-grey-100 relative z-0 h-auto overflow-hidden" style="margin-top: 70px;">
 			<!-- BG Pattern -->
 			<img
 				class="absolute inset-0 -z-10 h-full w-full max-w-full object-cover"

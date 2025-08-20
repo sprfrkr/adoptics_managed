@@ -162,3 +162,58 @@ function initializeAccordion() {
 	})
 }
 initializeAccordion()
+
+// Initialize promotional countdown timer
+function initializeCountdownTimer() {
+	const promoBar = document.querySelector("#promo-bar")
+	const minutesElement = document.querySelector("#countdown-minutes")
+	const secondsElement = document.querySelector("#countdown-seconds")
+
+	if (!promoBar || !minutesElement || !secondsElement) return
+
+	// Set initial countdown time (23 minutes)
+	let totalSeconds = 23 * 60
+
+	// Check if there's a saved end time in localStorage
+	const savedEndTime = localStorage.getItem('promoEndTime')
+	const now = new Date().getTime()
+
+	if (savedEndTime && now < parseInt(savedEndTime)) {
+		// Use saved end time
+		totalSeconds = Math.floor((parseInt(savedEndTime) - now) / 1000)
+	} else {
+		// Set new end time (23 minutes from now)
+		const endTime = now + (totalSeconds * 1000)
+		localStorage.setItem('promoEndTime', endTime.toString())
+	}
+
+	// Update display function
+	function updateDisplay() {
+		const minutes = Math.floor(totalSeconds / 60)
+		const seconds = totalSeconds % 60
+		
+		minutesElement.textContent = minutes.toString().padStart(2, '0')
+		secondsElement.textContent = seconds.toString().padStart(2, '0')
+	}
+
+	// Countdown function
+	function countdown() {
+		if (totalSeconds <= 0) {
+			// Timer expired - reset to 23 minutes and save new end time
+			totalSeconds = 23 * 60
+			const newEndTime = new Date().getTime() + (totalSeconds * 1000)
+			localStorage.setItem('promoEndTime', newEndTime.toString())
+		}
+
+		updateDisplay()
+		totalSeconds--
+	}
+
+
+
+	// Start the countdown
+	updateDisplay()
+	setInterval(countdown, 1000)
+}
+
+initializeCountdownTimer()
