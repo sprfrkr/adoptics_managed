@@ -166,10 +166,16 @@ initializeAccordion()
 // Initialize promotional countdown timer
 function initializeCountdownTimer() {
 	const promoBar = document.querySelector("#promo-bar")
+	
+	// Desktop elements
 	const minutesElement = document.querySelector("#countdown-minutes")
 	const secondsElement = document.querySelector("#countdown-seconds")
+	
+	// Mobile elements
+	const minutesMobileElement = document.querySelector("#countdown-minutes-mobile")
+	const secondsMobileElement = document.querySelector("#countdown-seconds-mobile")
 
-	if (!promoBar || !minutesElement || !secondsElement) return
+	if (!promoBar) return
 
 	// Set initial countdown time (23 minutes)
 	let totalSeconds = 23 * 60
@@ -191,9 +197,20 @@ function initializeCountdownTimer() {
 	function updateDisplay() {
 		const minutes = Math.floor(totalSeconds / 60)
 		const seconds = totalSeconds % 60
+		const minutesStr = minutes.toString().padStart(2, '0')
+		const secondsStr = seconds.toString().padStart(2, '0')
 		
-		minutesElement.textContent = minutes.toString().padStart(2, '0')
-		secondsElement.textContent = seconds.toString().padStart(2, '0')
+		// Update desktop countdown if elements exist
+		if (minutesElement && secondsElement) {
+			minutesElement.textContent = minutesStr
+			secondsElement.textContent = secondsStr
+		}
+		
+		// Update mobile countdown if elements exist
+		if (minutesMobileElement && secondsMobileElement) {
+			minutesMobileElement.textContent = minutesStr
+			secondsMobileElement.textContent = secondsStr
+		}
 	}
 
 	// Countdown function
@@ -208,8 +225,6 @@ function initializeCountdownTimer() {
 		updateDisplay()
 		totalSeconds--
 	}
-
-
 
 	// Start the countdown
 	updateDisplay()

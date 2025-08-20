@@ -48,30 +48,37 @@
 	</head>
 	<body class="relative h-full">
 		<!-- Promotional Sticky Bar -->
-		<div id="promo-bar" class="fixed top-0 left-0 right-0 text-white py-4 sm:py-3 px-4 shadow-lg" style="background-color: #FF5A5F; z-index: 9999;">
-			<div class="container mx-auto flex items-center justify-center text-center">
-				<div class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
-					<div class="flex items-center gap-2">
-						<span class="text-sm sm:text-base font-semibold">🔥 LIMITED TIME OFFER:</span>
-						<span class="text-sm sm:text-base">Book a discovery call in the next</span>
-					</div>
-					<div class="flex items-center gap-2">
-						<div id="countdown-timer" class="px-3 py-1 rounded-md font-bold text-sm sm:text-base text-white" style="background-color: #FF5A5F;">
-							<span id="countdown-minutes">23</span>:<span id="countdown-seconds">00</span>
-						</div>
-						<span class="text-sm sm:text-base font-semibold">minutes</span><span class="text-sm sm:text-base">and get your first month FREE!</span>
+		<div id="promo-bar" class="fixed top-0 left-0 right-0 text-white py-4 px-3 shadow-lg" style="background-color: #FF5A5F; z-index: 9999;">
+			<div class="max-w-6xl mx-auto">
+				<!-- Mobile Layout -->
+				<div class="block sm:hidden text-center space-y-2">
+					<div class="text-xs font-semibold">
+						🔥 LIMITED TIME: Book in next <span id="countdown-timer-mobile" class="px-2 py-1 rounded font-bold text-white" style="background-color: #FF5A5F;"><span id="countdown-minutes-mobile">23</span>:<span id="countdown-seconds-mobile">00</span></span> minutes  & get 1st month FREE!
 					</div>
 					<a href="https://api.leadconnectorhq.com/widget/booking/Vjt4i3z3mS0p0LHQzExz" 
-						class="text-white hover:opacity-90 px-4 py-2 rounded-md font-bold text-sm sm:text-base transition-all duration-200 whitespace-nowrap" style="background-color: #FF5A5F;">
+						class="inline-block hover:opacity-90 px-4 py-2 rounded-md font-bold text-xs text-white transition-all duration-200" style="background-color: #FF5A5F;">
 						Book Now →
 					</a>
 				</div>
-
+				
+				<!-- Desktop Layout -->
+				<div class="hidden sm:flex items-center justify-center text-center gap-4">
+					<span class="text-sm font-semibold">🔥 LIMITED TIME OFFER:</span>
+					<span class="text-sm">Book a discovery call in the next</span>
+					<div id="countdown-timer" class="px-3 py-1 rounded-md font-bold text-sm text-white" style="background-color: #FF5A5F;">
+						<span id="countdown-minutes">23</span>:<span id="countdown-seconds">00</span>
+					</div>
+					<span class="text-sm">minutes and get your first month FREE!</span>
+					<a href="https://api.leadconnectorhq.com/widget/booking/Vjt4i3z3mS0p0LHQzExz" 
+						class="hover:opacity-90 text-white px-4 py-2 rounded-md font-bold text-sm transition-all duration-200 whitespace-nowrap" style="background-color: #FF5A5F;">
+						Book Now →
+					</a>
+				</div>
 			</div>
 		</div>
 
 		<!-- Header & Hero -->
-		<div class="bg-grey-100 relative z-0 h-auto overflow-hidden" style="margin-top: 70px;">
+		<div class="bg-grey-100 relative z-0 h-auto overflow-hidden" style="margin-top: 80px;">
 			<!-- BG Pattern -->
 			<img
 				class="absolute inset-0 -z-10 h-full w-full max-w-full object-cover"
