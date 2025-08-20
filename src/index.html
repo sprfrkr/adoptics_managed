@@ -35,6 +35,16 @@
 			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
 			rel="stylesheet"
 		/>
+		<style>
+			.about-shad-grid {
+				grid-template-columns: 1fr;
+			}
+			@media (min-width: 768px) {
+				.about-shad-grid {
+					grid-template-columns: 2fr 1fr;
+				}
+			}
+		</style>
 	</head>
 	<body class="relative h-full">
 		<!-- Promotional Sticky Bar -->
@@ -134,6 +144,43 @@
 
 		<!-- Main Content -->
 		<main class="flex-auto">
+					<!-- About Shad Section -->
+		<section class="py-12 md:py-24">
+			<div class="container px-6 md:px-8">
+				<div class="bg-purple-900 text-white rounded-2xl p-8 md:p-16" style="background-color: #581c87;">
+					<div class="max-w-4xl mx-auto">
+						<div class="about-shad-grid grid gap-8 md:gap-12 md:items-center">
+							<div class="order-2 md:order-1 flex flex-col justify-center space-y-8 px-4 md:px-6 py-8 md:py-12">
+								<h2 class="text-2xl md:text-4xl font-bold text-left" style="color: white;">Meet Your Google Ads Manager</h2>
+								<p class="text-base md:text-xl leading-relaxed text-left" style="color: white;">
+									Shad is a 20+ year veteran of Google Ads and growth marketing, 
+									helping SaaS, eCommerce, and lead-generation brands scale profitably. 
+									Over two decades, he has managed millions in ad spend, developed 
+									winning campaign structures, and pioneered dynamic landing 
+									page strategies that consistently boost ROI. 
+								</p><br>
+								<p class="text-base md:text-xl leading-relaxed text-left" style="color: white;">
+									Beyond hands-on account management, Shad has led growth teams, 
+									advised startups, and built automation tools that eliminate wasted 
+									spend while accelerating conversions. With AdOptics Managed, 
+									he brings together expert strategy and cutting-edge technology 
+									to deliver transparent, performance-driven results for every client. 
+								</p>
+							</div>
+							<div class="order-1 md:order-2 flex justify-center items-center mb-6 md:mb-0 pb-6 md:pb-8">
+								<img 
+									src="./images/home/shad.png" 
+									alt="Shad - Google Ads Expert"
+									class="w-48 h-48 md:w-56 md:h-56 object-cover rounded-2xl shadow-lg"
+									style="max-height: 400px; max-width: 400px;"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 			<!-- Built for SaaS, Ecommerce, And Lead-Gen Brands Spending $5K+/mo -->
 			<section class="relative py-16 md:py-24">
 				<div class="container">
