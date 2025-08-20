@@ -35,16 +35,7 @@
 			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
 			rel="stylesheet"
 		/>
-		<style>
-			.about-shad-grid {
-				grid-template-columns: 1fr;
-			}
-			@media (min-width: 768px) {
-				.about-shad-grid {
-					grid-template-columns: 2fr 1fr;
-				}
-			}
-		</style>
+
 	</head>
 	<body class="relative h-full">
 		<!-- Promotional Sticky Bar -->
@@ -53,7 +44,7 @@
 				<!-- Mobile Layout -->
 				<div class="block sm:hidden text-center space-y-2">
 					<div class="text-xs font-semibold">
-						🔥 LIMITED TIME: Book in next <span id="countdown-timer-mobile" class="px-2 py-1 rounded font-bold text-white" style="background-color: #FF5A5F;"><span id="countdown-minutes-mobile">23</span>:<span id="countdown-seconds-mobile">00</span></span> minutes  & get 1st month FREE!
+						🔥 LIMITED TIME OFFER: Book your discovery call in next <span id="countdown-timer-mobile" class="px-2 py-1 rounded font-bold text-white" style="background-color: #FF5A5F;"><span id="countdown-minutes-mobile">23</span>:<span id="countdown-seconds-mobile">00</span></span> minutes and get your first month FREE!
 					</div>
 					<a href="https://api.leadconnectorhq.com/widget/booking/Vjt4i3z3mS0p0LHQzExz" 
 						class="inline-block hover:opacity-90 px-4 py-2 rounded-md font-bold text-xs text-white transition-all duration-200" style="background-color: #FF5A5F;">
@@ -89,7 +80,14 @@
 			<header class="sticky top-0 left-0 z-10 py-4 lg:py-5">
 				<div class="container">
 					<div class="flex items-center justify-between">
-						<a href="#">
+						<!-- Mobile Layout - Buttons Only (hidden on desktop) -->
+						<div class="flex md:hidden items-center justify-center gap-2 px-2 w-full pt-4">
+							<a href="https://audit.adoptics.com" class="btn btn-secondary flex-1 text-center text-sm py-2 px-3">Get a 60-Second Google Ads Audit</a>
+							<a href="https://api.leadconnectorhq.com/widget/booking/Vjt4i3z3mS0p0LHQzExz" class="btn btn-primary flex-1 text-center text-sm py-2 px-3">Book a Free Discovery Call</a>
+						</div>
+						
+						<!-- Desktop Layout - Logo (hidden on mobile) -->
+						<a href="#" class="hidden md:block">
 							<img
 								class="w-[165px]"
 								src="./images/global/logo.svg"
@@ -97,8 +95,8 @@
 							/>
 						</a>
 
-						<!-- Buttons -->
-						<div class="flex gap-3">
+						<!-- Desktop Layout - Buttons (hidden on mobile) -->
+						<div class="desktop-buttons gap-3">
 							<a href="https://audit.adoptics.com" class="btn btn-secondary">Get a 60-Second Google Ads Audit</a>
 							<a href="https://api.leadconnectorhq.com/widget/booking/Vjt4i3z3mS0p0LHQzExz" class="btn btn-primary">Book a Free Discovery Call</a>
 						</div>

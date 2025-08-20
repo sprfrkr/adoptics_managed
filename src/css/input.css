@@ -126,4 +126,24 @@
 	.mobile-submenu-link {
 		@apply text-grey-600 flex w-full flex-col justify-between p-2 text-sm;
 	}
+
+	/* About Shad Section - Custom Grid Layout */
+	.about-shad-grid {
+		grid-template-columns: 1fr;
+	}
+	@media (min-width: 768px) {
+		.about-shad-grid {
+			grid-template-columns: 2fr 1fr;
+		}
+	}
+	
+	/* Desktop Header Buttons - Responsive Display */
+	.desktop-buttons {
+		display: none;
+	}
+	@media (min-width: 768px) {
+		.desktop-buttons {
+			display: flex;
+		}
+	}
 }
