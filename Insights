@@ -37,3 +37,11 @@ BRAND POSITIONING:
 DEPLOYMENT TARGET:
 - Intended to be deployed at https://managed.adoptics.com
 - Connected to GitHub repo: https://github.com/sprfrkr/adoptics_managed.git
+
+PANELS & CTA STRATEGY:
+- Pricing area now presents 3 panels as a grid: Free Audit, $990 Managed (highlighted as Most Popular), and $5,000+ Growth Plan.
+- Free Audit panel links to the audit site with messaging aligned to audit features (60-second result, secure OAuth) as seen on the audit landing page (`https://audit.adoptics.com/`).
+- Growth Plan emphasizes full-funnel engagement (CRM integration, nurture, incrementality testing) with a consult CTA.
+
+TRACKING:
+- Google Tag Manager added with container ID GTM-WN8WZJR in head and noscript iframe in body.
