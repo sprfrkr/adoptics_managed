@@ -24,6 +24,9 @@ TECHNICAL DETAILS:
 - Event delegation for better performance
 - CSS Grid and Flexbox for layouts
 
+MOBILE/IOS SAFARI NOTE:
+- To prevent horizontal overflow on cards with media, wrap sections with `overflow-hidden` and ensure images are `w-full h-auto` on mobile with a reasonable `max-w`.
+
 BRAND POSITIONING:
 - Targets businesses spending $5K+/month on ads
 - Focuses on SKAG campaigns and dynamic landing pages
